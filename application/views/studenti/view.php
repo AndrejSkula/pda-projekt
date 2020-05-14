@@ -16,6 +16,18 @@
 					<label>Priezvisko:</label>
 					<p><?php echo !empty($studenti['priezvisko'])?$studenti['priezvisko']:''; ?></p>
 				</div>
+				<div class="form-group">
+					<label>Telefónne číslo:</label>
+					<p><?php echo !empty($studenti['telefonne_cislo'])?$studenti['telefonne_cislo']:''; ?></p>
+				</div>
+				<div class="form-group">
+					<label>Adresa:</label>
+					<p><?php echo !empty($studenti['adresa'])?$studenti['adresa']:''; ?></p>
+				</div>
+				<div class="form-group">
+					<label>Email:</label>
+					<p><?php echo !empty($studenti['email'])?$studenti['email']:''; ?></p>
+				</div>
 			</div>
 		</div>
 	</div>

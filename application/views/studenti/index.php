@@ -18,10 +18,13 @@
 				<table class="table striped">
 					<thead>
 					<tr>
-						<th width="20%">ID</th>
-						<th width="30%">Meno</th>
-						<th width="30%">Priezvisko</th>
-						<th width="20%">Akcia</th>
+						<th width="5%">ID</th>
+						<th width="15%">Meno</th>
+						<th width="20%">Priezvisko</th>
+						<th width="20%">Telefónne číslo</th>
+						<th width="15%">Adresa</th>
+						<th width="15%">Email</th>
+						<th width="10%">Akcia</th>
 					</tr>
 					</thead>
 					<tbody id="userData">
@@ -30,6 +33,9 @@
 							<td><?php echo '#'.$student['id_studenta']; ?></td>
 							<td><?php echo $student['meno']; ?></td>
 							<td><?php echo $student['priezvisko']; ?></td>
+							<td><?php echo $student['telefonne_cislo']; ?></td>
+							<td><?php echo $student['adresa']; ?></td>
+							<td><?php echo $student['email']; ?></td>
 							<td>
 								<a href="<?php echo site_url('studenti/view/'.$student['id_studenta']); ?>"class="glyphicon glyphicon-eye-open"></a>
 								<a href="<?php echo site_url('studenti/edit/'.$student['id_studenta']); ?>"class="glyphicon glyphicon-edit"></a>

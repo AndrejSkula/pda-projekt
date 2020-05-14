@@ -24,6 +24,7 @@ class Studenti extends CI_Controller
 
 		$data['studenti'] = $this->Studenti_model->ZobrazStudentov();
 		$data['nazov'] = 'Zoznam študentov';
+		$data['title'] = 'Zoznam študentov';
 		//nahratie zoznamu studentov
 		$this->load->view('templates/header', $data);
 		$this->load->view('studenti/index', $data);
@@ -58,11 +59,17 @@ class Studenti extends CI_Controller
 			//definicia pravidiel validacie
 			$this->form_validation->set_rules('priezvisko', 'Pole priezvisko', 'required');
 			$this->form_validation->set_rules('meno', 'Pole meno', 'required');
+			$this->form_validation->set_rules('telefonne_cislo', 'Pole telefonne cislo', 'required');
+			$this->form_validation->set_rules('adresa', 'Pole adresa', 'required');
+			$this->form_validation->set_rules('email', 'Pole email', 'required');
 
 			//priprava dat pre vlozenie
 			$postData = array(
 				'priezvisko' => $this->input->post('priezvisko'),
-				'meno' => $this->input->post('meno')
+				'meno' => $this->input->post('meno'),
+				'telefonne_cislo' => $this->input->post('telefonne_cislo'),
+				'adresa' => $this->input->post('adresa'),
+				'email' => $this->input->post('email')
 			);
 
 			//validacia zaslanych dat
@@ -99,11 +106,17 @@ class Studenti extends CI_Controller
 			//definicia pravidiel validacie
 			$this->form_validation->set_rules('priezvisko', 'Zadajte priezvisko', 'required');
 			$this->form_validation->set_rules('meno', 'Zadajte meno', 'required');
+			$this->form_validation->set_rules('telefonne_cislo', 'Zadajte telefónne číslo', 'required');
+			$this->form_validation->set_rules('adresa', 'Zadajte adresu', 'required');
+			$this->form_validation->set_rules('email', 'Zadajte email', 'required');
 
 			// priprava dat pre aktualizaciu
 			$postData = array(
 				'priezvisko' => $this->input->post('priezvisko'),
-				'meno' => $this->input->post('meno')
+				'meno' => $this->input->post('meno'),
+				'telefonne_cislo' => $this->input->post('telefonne_cislo'),
+				'adresa' => $this->input->post('adresa'),
+				'email' => $this->input->post('email')
 			);
 
 			//validacia zaslanych dat
