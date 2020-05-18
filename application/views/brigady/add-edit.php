@@ -12,7 +12,7 @@
 	<div class="row">
 		<div class="col-xs-12">
 			<div class="panel panel-default">
-				<div class="panel-heading">Úprava alebo vloženie brigád <a href="<?php echo site_url('brigady/'); ?>" class="glyphicon glyphicon-arrow-left pull-right"></a></div>
+				<div class="panel-heading">Úprava/vloženie brigád <a href="<?php echo site_url('brigady/'); ?>" class="glyphicon glyphicon-arrow-left pull-right"></a></div>
 				<div class="panel-body">
 					<form method="post" action="" class="form">
 						<div class="form-group">
