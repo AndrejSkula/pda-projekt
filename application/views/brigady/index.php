@@ -19,8 +19,8 @@
 					<thead>
 					<tr>
 						<th width="5%">ID</th>
-						<th width="25%">Názov</th>
-						<th width="20%">Dátum</th>
+						<th width="20%">Názov</th>
+						<th width="15%">Dátum</th>
 						<th width="10%">Plat za hodinu</th>
 						<th width="10%">Aktuálne</th>
 						<th width="10%">Akcia</th>

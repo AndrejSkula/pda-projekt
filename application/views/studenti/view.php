@@ -2,7 +2,7 @@
 	<div class="row"><br></div>
 	<div class="row">
 		<div class="panel panel-default">
-			<div class="panel-heading">Detail záznamu <a href="<?php echo site_url('studenti/'); ?>" class="glyphicon glyphicon-arrow-left pull-right"></a></div>
+			<div class="panel-heading">Detail študenta<a href="<?php echo site_url('studenti/'); ?>" class="glyphicon glyphicon-arrow-left pull-right"></a></div>
 			<div class="panel-body">
 				<div class="form-group">
 					<label>ID:</label>

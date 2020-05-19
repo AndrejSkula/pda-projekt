@@ -20,9 +20,9 @@
 					<tr>
 						<th width="5%">ID</th>
 						<th width="25%">Názov</th>
-						<th width="20%">Telefónne číslo</th>
-						<th width="10%">Adresa</th>
-						<th width="10%">Email</th>
+						<th width="10%">Telefónne číslo</th>
+						<th width="15%">Adresa</th>
+						<th width="20%">Email</th>
 						<th width="10%">Akcia</th>
 					</tr>
 					</thead>

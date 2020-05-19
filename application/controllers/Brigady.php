@@ -39,7 +39,7 @@ class Brigady extends CI_Controller
 		if (!empty($id)) {
 			//$data['help'] = json_encode($this->Hlavny_model->record_count_per_user_array());
 			$data['brigady'] = $this->Brigady_model->ZobrazBrigady($id);
-			//$data['title'] = $data['brigady']['nazov'];
+			$data['title'] = $data['brigady']['nazov'];
 			// nahratie detailu zaznamu
 			$this->load->view('templates/header', $data);
 			$this->load->view('brigady/view', $data);
