@@ -22,7 +22,7 @@ class Zamestnavatel extends CI_Controller
 			$this->session->unset_userdata('error_msg');
 		}
 		$data['zamestnavatel'] = $this->Zamestnavatel_model->ZobrazZamestnavatela();
-		$data['title'] = 'Zamestnávatelovia';
+		$data['title'] = 'Zamestnávatel';
 		//nahratie zoznamu zamestnancov
 		$this->load->view('templates/header', $data);
 		$this->load->view('zamestnavatel/index', $data);
@@ -79,7 +79,7 @@ class Zamestnavatel extends CI_Controller
 		}
 		$data['post'] = $postData;
 		$data['title'] = 'Vytvor zamestnávateľa';
-		$data['action'] = 'Nový zamestnávateľ';
+		$data['action'] = 'add';
 		// zobrazenie formulara pre vlozenie a editaciu dat
 		$this->load->view('templates/header', $data);
 		$this->load->view('zamestnavatel/add-edit', $data);
@@ -120,7 +120,7 @@ class Zamestnavatel extends CI_Controller
 		}
 		$data['post'] = $postData;
 		$data['title'] = 'Uprav zamestnávateľa';
-		$data['action'] = 'Uprav zamestnávateľa';
+		$data['action'] = 'edit';
 		// zobrazenie formulara pre vlozenie a editaciu dat
 		$this->load->view('templates/header', $data);
 		$this->load->view('zamestnavatel/add-edit', $data);

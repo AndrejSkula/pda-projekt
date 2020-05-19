@@ -23,6 +23,7 @@
 						<th width="20%">Telefónne číslo</th>
 						<th width="10%">Adresa</th>
 						<th width="10%">Email</th>
+						<th width="10%">Akcia</th>
 					</tr>
 					</thead>
 					<tbody id="userData">
@@ -34,9 +35,9 @@
 							<td><?php echo $zamest['adresa']; ?></td>
 							<td><?php echo $zamest['email']; ?></td>
 							<td>
-								<a href="<?php echo site_url('brigady/view/'.$zamest['id_zamestnavatela']); ?>"class="glyphicon glyphicon-eye-open"></a>
-								<a href="<?php echo site_url('brigady/edit/'.$zamest['id_zamestnavatela']); ?>"class="glyphicon glyphicon-edit"></a>
-								<a href="<?php echo site_url('brigady/delete/'.$zamest['id_zamestnavatela']); ?>"class="glyphicon glyphicon-trash" onclick="return confirm('Are you sure to delete?')"></a>
+								<a href="<?php echo site_url('zamestnavatel/view/'.$zamest['id_zamestnavatela']); ?>"class="glyphicon glyphicon-eye-open"></a>
+								<a href="<?php echo site_url('zamestnavatel/edit/'.$zamest['id_zamestnavatela']); ?>"class="glyphicon glyphicon-edit"></a>
+								<a href="<?php echo site_url('zamestnavatel/delete/'.$zamest['id_zamestnavatela']); ?>"class="glyphicon glyphicon-trash" onclick="return confirm('Are you sure to delete?')"></a>
 							</td>
 						</tr>
 					<?php endforeach; else: ?>
