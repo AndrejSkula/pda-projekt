@@ -1,13 +1,11 @@
-<div class="panel panel-default ">
-<ul class="sidebar-menu" data-widget="tree">
-	<li><a href="/pda-projekt/index.php/zamestnavatel"><i class="fa fa-circle-o"></i>Zamestnávatelia</a></li>
-	<li><a href="/pda-projekt/index.php/studenti"><i class="fa fa-circle-o"></i>Študenti</a></li>
-	<li><a href="/pda-projekt/index.php/brigady"><i class="fa fa-circle-o"></i>Brigády</a></li>
-	<li><a href="/pda-projekt/index.php/studenti_has_brigady"><i class="fa fa-circle-o"></i>Brigády študentov</a></li>
-	<li><a href="/pda-projekt/index.php/grafy"><i class="fa fa-circle-o"></i>Grafy</a></li>
-</ul>
-</div>
 <div class="container">
+	<div class="panel panel-default " align="center">
+		<button type="button" class="btn btn-succes btn-lg"><a href="/pda-projekt/index.php/zamestnavatel">Zamestnávatelia</a></button>
+		<button type="button" class="btn btn-succes btn-lg"><a href="/pda-projekt/index.php/studenti">Študenti</a></button>
+		<button type="button" class="btn btn-succes btn-lg"><a href="/pda-projekt/index.php/brigady">Brigády</a></button>
+		<button type="button" class="btn btn-succes btn-lg"><a href="/pda-projekt/index.php/studenti_has_brigady">Brigády študentov</a></button>
+		<button type="button" class="btn btn-succes btn-lg"><a href="/pda-projekt/index.php/grafy">Grafy</a></button>
+	</div>
 	<?php if(!empty($success_msg)){ ?>
 		<div class="col-xs-12">
 			<div class="alert alert-success"><?php echo $success_msg; ?></div>
