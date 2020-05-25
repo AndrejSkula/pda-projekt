@@ -8,10 +8,10 @@ class Studenti extends CI_Controller
 		$this->load->helper('form');
 		$this->load->library('form_validation');
 		$this->load->model('Studenti_model');
+
 	}
 	public function index(){
 		$data = array();
-
 		//ziskanie sprav zo session
 		if($this->session->userdata('success_msg')){
 			$data['success_msg'] = $this->session->userdata('success_msg');
@@ -132,10 +132,6 @@ class Studenti extends CI_Controller
 				}
 			}
 		}
-
-		//$data['users'] = $this->Temperatures_model->get_users_dropdown();
-		//	$data['users_selected'] = $postData['user'];
-		$data['post'] = $postData;
 		$data['title'] = 'Aktualizovať údaje';
 		$data['action'] = 'edit';
 

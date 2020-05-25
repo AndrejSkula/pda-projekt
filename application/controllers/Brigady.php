@@ -7,7 +7,6 @@ class Brigady extends CI_Controller
 		$this->load->helper('form');
 		$this->load->library('form_validation');
 		$this->load->model('Brigady_model');
-		//$this->load->model('Hlavny_model');
 	}
 
 	// zobrazenie hlavnej stránky brigady
@@ -37,7 +36,6 @@ class Brigady extends CI_Controller
 		$data = array();
 		// kontrola, ci bolo zaslane id riadka
 		if (!empty($id)) {
-			//$data['help'] = json_encode($this->Hlavny_model->record_count_per_user_array());
 			$data['brigady'] = $this->Brigady_model->ZobrazBrigady($id);
 			$data['title'] = $data['brigady']['nazov'];
 			// nahratie detailu zaznamu
@@ -83,7 +81,6 @@ class Brigady extends CI_Controller
 				}
 			}
 		}
-		//$data['help'] = json_encode($this->Home_model->record_count_per_user_array());
 		$data['users'] = $this->Brigady_model->NaplnDropdownZamestnavatel();
 		$data['users_selected'] = '';
 		$data['post'] = $postData;
@@ -129,7 +126,6 @@ class Brigady extends CI_Controller
 				}
 			}
 		}
-		//$data['help'] = json_encode($this->Home_model->record_count_per_user_array());
 		$data['users'] = $this->Brigady_model->NaplnDropdownZamestnavatel();
 		$data['users_selected'] = $postData['zamestnavatel_id_zamestnavatela'];
 		$data['post'] = $postData;

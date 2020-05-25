@@ -56,14 +56,6 @@
 					?>
 					</tbody>
 				</table>
-				<?php
-				foreach ($query->result() as $row){
-					echo "<p>". $row->meno." : ".$row->priezvisko."</p>";
-				}
-				?>
-				<?php
-				echo $this->pagination->create_links();
-				?>
 			</div>
 		</div>
 	</div>
