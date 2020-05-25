@@ -6,6 +6,7 @@ class Grafy extends CI_Controller
 		parent::__construct();
 		$this->load->helper('form');
 		$this->load->library('form_validation');
+		$this->load->model('Hlavny_model');
 	}
 
 	public function index()
@@ -20,7 +21,11 @@ class Grafy extends CI_Controller
 			$data['error_msg'] = $this->session->userdata('error_msg');
 			$this->session->unset_userdata('error_msg');
 		}
-		$this->load->view('templates/header');
+		$data['graf1'] = json_encode($this->Hlavny_model->GrafZamestnavatelov());
+		$data['graf2'] = json_encode($this->Hlavny_model->GrafBrigad2());
+		$data['graf3'] = json_encode($this->Hlavny_model->GrafBrigad());
+		$data['title'] = 'Grafy';
+		$this->load->view('templates/header', $data);
 		$this->load->view('grafy/index', $data);
 		$this->load->view('templates/footer', $data);
 	}
