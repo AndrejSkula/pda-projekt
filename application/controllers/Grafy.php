@@ -24,6 +24,7 @@ class Grafy extends CI_Controller
 		$data['graf1'] = json_encode($this->Hlavny_model->GrafZamestnavatelov());
 		$data['graf2'] = json_encode($this->Hlavny_model->GrafBrigad2());
 		$data['graf3'] = json_encode($this->Hlavny_model->GrafBrigad());
+		$data['graf4'] = json_encode($this->Hlavny_model->GrafHodin());
 		$data['title'] = 'Grafy';
 		$this->load->view('templates/header', $data);
 		$this->load->view('grafy/index', $data);

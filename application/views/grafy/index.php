@@ -28,9 +28,17 @@
 	</div>
 	<div class="col-md-12">
 		<div class="box box-warning">
-			<h3 class="box-title" style="text-align: center">Plat v jednotlivých mesiacoch</h3>
+			<h3 class="box-title" style="text-align: center">Plat za hodinu u študentov</h3>
 			<div class="box-header">
 				<div id="tretiGraf" style="height: 250px;"></div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-12">
+		<div class="box box-warning">
+			<h3 class="box-title" style="text-align: center">Počet odrobených hodín u študentov</h3>
+			<div class="box-header">
+				<div id="stvrtyGraf" style="height: 250px;"></div>
 			</div>
 		</div>
 	</div>

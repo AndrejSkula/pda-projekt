@@ -5,8 +5,10 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<!-- jQuery 3 -->
-<script src="<?php echo base_url(); ?>/assets/theme/bower_components/jquery/dist/jquery.min.js"></script>
+<!-- jQuery, morris, raphael -->
+<script src="<?php echo base_url(); ?>/assets/jquery/dist/jquery.min.js"></script>
+<script src="<?php echo base_url().'assets/raphael/raphael-min.js'?>"></script>
+<script src="<?php echo base_url().'assets/morris.js/morris.min.js'?>"></script>
 
 <script>
 	new Morris.Bar({
@@ -30,10 +32,21 @@
 	new Morris.Bar({
 		element: 'tretiGraf',
 		data: <?php echo $graf3; ?>,
-		xkey: 'datum',
-		ykeys: ['plat_za_hodinu'],
+		xkey: 'cele_meno',
+		ykeys: ['plat_za_hod'],
 		barColors: ['#438add', '#3c7cc6', '#356eb0', '#2e609a', '#285284'],
-		labels: ['pocet'],
+		labels: ['Plat za hodinu'],
+		resize: true
+	});
+</script>
+<script>
+	new Morris.Bar({
+		element: 'stvrtyGraf',
+		data: <?php echo $graf4; ?>,
+		xkey: 'cele_meno',
+		ykeys: ['pocet_hodin','plat_za_hod'],
+		barColors: ['#438add', '#285284', '#356eb0', '#2e609a', '#285284'],
+		labels: ['Počet hodín','Plat za hodinu'],
 		resize: true
 	});
 </script>
